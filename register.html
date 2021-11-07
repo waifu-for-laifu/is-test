@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="sign-up.css" />
+  </head>
+  <body>
+    <div class="main-holder">
+      <form method="get" action="register.html" class="signup-form">
+        <label class="lables">Name</label>
+        <input
+          type="text"
+          name="Name"
+          id="Name-field"
+          class="suf"
+          placeholder="Name"
+          required
+        />
+        <label class="lables">Username</label>
+        <input
+          type="text"
+          name="username"
+          id="username-field"
+          class="suf"
+          placeholder="Username"
+          required
+        />
+        <label class="lables">E-main</label>
+        <input
+          type="email"
+          name="E-mail"
+          id="E-mail-field"
+          class="suf"
+          placeholder="E-mail"
+          required
+        />
+        <label class="lables">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password-field"
+          class="suf"
+          placeholder="Password"
+          required
+        />
+        <label class="lables">Confirm your password</label>
+        <input
+          type="password"
+          name="password"
+          id="password-field"
+          class="suf"
+          placeholder="Confirm your password"
+          required
+        />
+        <label class="lables">Phone Numeder</label>
+        <input
+          type="tel"
+          name="Tel-number"
+          id="Tel-number-field"
+          class="suf"
+          placeholder="Tel-number"
+          required
+        />
+        <label class="lables">Gender</label>
+        <select class="gender" name="" id="Gender" required>
+          <option value="none"></option>
+          <option value="Non-Binary">Non-Binary</option>
+          <option value="Male">Male</option>
+          <option value="Femail">Femail</option>
+        </select>
+        <div class="div-a">
+          <div>
+            <input
+              type="checkbox"
+              name="Tel-number"
+              id="Tel-number-field"
+              class="suf-check"
+              required
+            />
+          </div>
+          <div>
+            <label class="labless"
+              >By creating your account you agree to our
+              <a class="qwerty" href="terms-of-use-wfl.html">Terms of use</a> and
+              <a class="qwerty" href="policy-wfl.html">policy</a>. *</label
+            >
+          </div>
+        </div>
+
+        <div class="div-a">
+          <div>
+            <input
+              type="checkbox"
+              name="Tel-number"
+              id="Tel-number-field"
+              class="suf-check"
+              required
+            />
+          </div>
+          <div>
+            <label class="labless"
+              >Please keep me informed by email about relevant publishing, news
+              and special offers.</label
+            >
+          </div>
+        </div>
+
+        <span>
+          <button class="rbtn" type="reset">Reset</button>
+          <button class="rbtn" type="submit">Register</button>
+        </span>
+      </form>
+      <button type="button" onclick="openNewWindow()" id="rrbtn" class="rrbtn">
+        Login
+      </button>
+    </div>
+
+    <script>
+      openNewWindow = function () {
+        location.assign("contacts-login.html");
+      };
+    </script>
+  </body>
+</html>
